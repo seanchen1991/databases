@@ -3,7 +3,8 @@
  * assignment; you can re-use most of that code here. */
 
 var http = require("http");
-var url = require('url');
+var url = require("url");
+var mysql = require("mysql");
 
 var handlers = require('./request-handler');
 var serverHelpers = require('./server-helpers');

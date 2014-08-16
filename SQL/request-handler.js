@@ -41,6 +41,7 @@ exports.postMessage = function(req, res) {
 
 exports.getMessages = function(req, res) {
   findMessages(function(err, messages) {
+    if (err) {throw err;}
       serverHelpers.sendResponse(res, messages);
   });
 };
